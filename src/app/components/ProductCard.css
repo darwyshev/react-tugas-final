@@ -1,0 +1,90 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .product-card {
+    background: linear-gradient(135deg, #2d1600 0%, #3a1a00 100%);
+    color: #fff6e0;
+    box-shadow: 0 4px 24px rgba(255, 140, 0, 0.18), 0 1.5px 8px rgba(0,0,0,0.18);
+  }
+  .product-card h3, .product-price, .details-link {
+    color: #ffb347;
+  }
+  .buy-btn {
+    background: linear-gradient(90deg, #ff9800 0%, #ffb347 100%);
+    color: #fff;
+  }
+  .buy-btn:hover {
+    background: linear-gradient(90deg, #ffb347 0%, #ff9800 100%);
+  }
+}
+
+.product-card {
+  background: linear-gradient(135deg, #fffbe6 0%, #ffe5b4 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(255, 140, 0, 0.10), 0 1.5px 8px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.product-card:hover {
+  box-shadow: 0 8px 32px rgba(255, 140, 0, 0.18), 0 2px 12px rgba(0,0,0,0.12);
+  transform: translateY(-4px) scale(1.03);
+}
+.product-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.product-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.35rem;
+  color: #d35400;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.product-price {
+  color: #e67e22;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.buy-btn {
+  background: linear-gradient(90deg, #ff9800 0%, #ffb347 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 1px 4px rgba(255, 140, 0, 0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.buy-btn:hover {
+  background: linear-gradient(90deg, #ffb347 0%, #ff9800 100%);
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.18);
+  transform: scale(1.04);
+}
+.details-link {
+  color: #d35400;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  transition: color 0.18s;
+}
+.details-link:hover {
+  text-decoration: underline;
+  color: #e67e22;
+}
